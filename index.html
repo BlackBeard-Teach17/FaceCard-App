@@ -281,7 +281,6 @@
 			  card.classList.remove('is-visa');
 			  card.classList.add('is-mastercard');
 			  cardImage.src = supportedCards.mastercard;
-			// cardImage.setAttribute("src", supportedCards.mastercard);
 			  return 'is-mastercard';
 		  }
 		  else
@@ -340,14 +339,6 @@
 	  };
 
 	  const validateWithLuhn = (digits) => {
-		//   let transformedDigits = digits
-		//   .reverse()
-		//   .map (x => parseInt(x))
-		//   .map ((x,i) => i % 2 == 0 ? x : 2 * x);
-
-		//   let sumAll = transformedDigits.reduce((acc, val) =>
-		//   acc + (val <= 9 ? val : val - 9), 0)
-		//   return sumAll % 10 === 0;
 		let isOtherDigit = false;
 		if (digits.length != 16)
 		{

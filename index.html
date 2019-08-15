@@ -64,9 +64,8 @@
 	[data-cart-info] span {
 		vertical-align: middle;
 		display: inline-block;
-		font-size: 150px;
 	}
-	.material-icons span
+	span.material-icons
 	{
 		font-size: 150px;
 	}
@@ -273,7 +272,6 @@
 			  card.classList.remove('is-mastercard');
 			  card.classList.add('is-visa');
 			 cardImage.src = supportedCards.visa;
-			//  cardImage.setAttribute("src", supportedCards.visa);
 			  return 'is-visa';
 		  }
 		  else if (isMasterCard){
